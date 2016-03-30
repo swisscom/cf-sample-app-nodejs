@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-sample-app-node
+  memory: 128MB
+  instances: 1
+
+  random-route: true
+
+  env:
+    NODE_ENV: production
