@@ -1,4 +1,4 @@
-# cf-sample-app-node
+# CF Sample App Node
 
 A sample application to deploy to Cloud Foundry which works out of the box
 
