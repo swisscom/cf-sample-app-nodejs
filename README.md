@@ -10,5 +10,5 @@ A sample application to deploy to Cloud Foundry which works out of the box
 
 ## Run in the cloud
 
-1. Run `cf push cf-sample-app-node -m 128M -n my-random-hostname` (replacing my-random-hostname with something creative)
+1. Run `cf push my-node-app -m 128M -n my-random-hostname` (replacing my-random-hostname with something creative)
 1. Visit the given URL
