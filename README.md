@@ -1,14 +1,16 @@
 # CF Sample App Node
 
-A sample application to deploy to Cloud Foundry which works out of the box
+A sample [Express](http://expressjs.com/) application to deploy to Cloud Foundry which works out of the box.
 
 ## Run locally
 
+1. Install [Node.js and npm](https://nodejs.org/)
 1. Run `npm install`
 1. Run `npm start`
 1. Visit [http://localhost:3000](http://localhost:3000)
 
 ## Run in the cloud
 
-1. Run `cf push my-node-app -m 128M -n my-random-hostname` (replacing my-random-hostname with something creative)
+1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
+1. Run `cf push my-node-app --random-route`
 1. Visit the given URL
