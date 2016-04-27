@@ -16,6 +16,7 @@
     "cookie-parser": "~1.4.1",
     "debug": "~2.2.0",
     "express": "~4.13.4",
+    "mongoose": "^4.4.13",
     "morgan": "~1.7.0",
     "pug": "^2.0.0-alpha6",
     "serve-favicon": "~2.3.0"

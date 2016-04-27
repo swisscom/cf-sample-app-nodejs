@@ -14,5 +14,5 @@ A sample [Express](http://expressjs.com/) application to deploy to Cloud Foundry
 1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
 1. Run `cf create-service mongodb small my-mongodb`
 1. Wait about 3 minutes until the MongoDB is ready
-1. Run `cf push my-node-app --random-route`
+1. Run `cf push --random-route`
 1. Visit the given URL
