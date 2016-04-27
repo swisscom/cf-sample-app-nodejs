@@ -18,4 +18,4 @@ A sample [Express](http://expressjs.com/) application to deploy to Cloud Foundry
 1. Run `cf push`
 1. Visit the given URL
 1. `GET /db` to retrieve kittens
-1. `POST create-kitten?name=garfield` to create kitten
+1. `POST /create-kitten?name=garfield` to create kitten
