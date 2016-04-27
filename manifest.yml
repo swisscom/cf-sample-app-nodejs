@@ -1,0 +1,13 @@
+---
+applications:
+- name: my-node-app
+  memory: 128MB
+  instances: 1
+
+  host: my-random-hostname
+
+  services:
+  - my-mongodb
+
+  env:
+    NODE_ENV: production
