@@ -51,7 +51,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 // the route where you can retrieve all the kittens in our MongoDB
-app.post('/create-kitten', (req, res, next) => {
+app.get('/kittens', (req, res, next) => {
+  Kitten.find((err, kittens) => {
+    if (err) return next(err);
+
+    res.json(kittens);
+  })
+})
+
+// the route where you can createa new kitten in our MongoDB
+app.post('/kittens', (req, res, next) => {
   const kitten = new Kitten({
     name: req.query.name
   });
@@ -60,15 +69,6 @@ app.post('/create-kitten', (req, res, next) => {
     if (err) return next(err);
 
     res.send('Kitten ' + newKitten.name + ' saved');
-  })
-})
-
-// the route where you can retrieve all the kittens in our MongoDB
-app.get('/db', (req, res, next) => {
-  Kitten.find((err, kittens) => {
-    if (err) return next(err);
-
-    res.json(kittens);
   })
 })
 
