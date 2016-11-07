@@ -1,5 +1,5 @@
 {
-  "name": "cf-sample-app-node",
+  "name": "cf-sample-app-nodejs",
   "description": "A sample Node.js application to run on Cloud Foundry out of the box",
   "keywords": [
     "cloud-foundry"
@@ -26,9 +26,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/swisscom/cf-sample-app-node.git"
+    "url": "https://github.com/swisscom/cf-sample-app-nodejs.git"
   },
   "bugs": {
-    "url": "https://github.com/swisscom/cf-sample-app-node/issues"
+    "url": "https://github.com/swisscom/cf-sample-app-nodejs/issues"
   }
 }
