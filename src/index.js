@@ -1,12 +1,10 @@
-#!/usr/bin/env node
-
 'use strict';
 
 /**
  * Module dependencies.
  */
 
-const app = require('../app');
+const app = require('./app');
 const debug = require('debug')('cf-sample-app-node:server');
 const http = require('http');
 
