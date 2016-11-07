@@ -5,7 +5,7 @@
  */
 
 const app = require('./app');
-const debug = require('debug')('cf-sample-app-node:server');
+const debug = require('debug')('cf-sample-app-nodejs:server');
 const http = require('http');
 
 /**
