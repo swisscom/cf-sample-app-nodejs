@@ -12,7 +12,7 @@
     "start": "node src"
   },
   "dependencies": {
-    "body-parser": "^1.17.0",
+    "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.7",
     "express": "^4.15.3",
