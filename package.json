@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "private": true,
   "author": "Tobias Fuhrimann <tobias.fuhrimann@swisscom.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "node src"
   },
