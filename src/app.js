@@ -10,6 +10,8 @@ const bodyParser = require('body-parser');
 
 const routes = require('./routes/index');
 
+require('dotenv').config();
+
 // bootstrap our app
 const app = express();
 
