@@ -7,6 +7,7 @@
 const app = require('./app');
 const debug = require('debug')('cf-sample-app-nodejs:server');
 const http = require('http');
+var sleep = require('sleep');
 
 /**
  * Get port from environment and store in Express.
@@ -82,9 +83,19 @@ function onError(error) {
  */
 
 function onListening() {
-  const addr = server.address();
-  const bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  switch (process.argv[process.argv.length - 1]) {
+  case 'web':
+    const addr = server.address();
+    const bind = typeof addr === 'string'
+      ? 'pipe ' + addr
+      : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+    break;
+  case 'worker':
+    while (true){
+      console.log('Hello! I am the worker process!');
+      sleep.sleep(1);
+    }
+    break;
+  }
 }
